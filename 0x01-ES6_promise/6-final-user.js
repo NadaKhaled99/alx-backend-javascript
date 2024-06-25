@@ -5,8 +5,7 @@ export default async function handleProfileSignup(
   firstName,
   lastName,
   fileName,
-) 
-
+)
   {
   const res = [];
   try {
@@ -18,7 +17,6 @@ export default async function handleProfileSignup(
       value: err.toString(),
     });
   }
-
   try {
     const upload = await uploadPhoto(fileName);
     res.push({ status: 'fulfilled', value: upload });
