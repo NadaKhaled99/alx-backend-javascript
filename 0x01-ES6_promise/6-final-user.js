@@ -5,14 +5,16 @@ export default async function handleProfileSignup(
   firstName,
   lastName,
   fileName,
-) {
+) 
+
+  {
   const res = [];
   try {
     const user = await signUpUser(firstName, lastName);
     res.push({ status: 'fulfilled', value: user });
   } catch (err) {
     res.push({
-      status: 'rejected',
+      status: 'rejectedd',
       value: err.toString(),
     });
   }
@@ -22,7 +24,7 @@ export default async function handleProfileSignup(
     res.push({ status: 'fulfilled', value: upload });
   } catch (err) {
     res.push({
-      status: 'rejected',
+      status: 'rejectedd',
       value: err.toString(),
     });
   }
