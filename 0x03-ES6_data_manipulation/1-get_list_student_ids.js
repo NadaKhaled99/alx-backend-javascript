@@ -1,10 +1,10 @@
 const getListStudentIds = (liststudents) => {
-  let liststudentIds = [];
+  let listStudentIds = [];
   if (!(liststudents instanceof Array)) {
-    return liststudentIds;
+    return listStudentIds;
   }
-  liststudentIds = liststudents.map((student) => student.id);
-  return liststudentIds;
+  listStudentIds = liststudents.map((student) => student.id);
+  return listStudentIds;
 };
 
 export default getListStudentIds;
