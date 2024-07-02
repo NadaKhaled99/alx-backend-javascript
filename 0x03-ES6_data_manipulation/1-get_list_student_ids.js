@@ -1,9 +1,9 @@
-const getListStudentIds = (listStudents) => {
+const getListStudentIds = (listStudent) => {
   let listStudentIds = [];
-  if (!(listStudents instanceof Array)) {
+  if (!(listStudent instanceof Array)) {
     return listStudentIds;
   }
-  listStudentIds = listStudents.map((student) => student.id);
+  listStudentIds = listStudent.map((student) => student.id);
   return listStudentIds;
 };
 
